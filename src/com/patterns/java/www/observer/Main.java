@@ -8,5 +8,9 @@ public class Main {
 
         weatherData.setMeasurements(80,65,30.4f);
 
+        com.patterns.java.www.observer.javaimpl.WeatherData weatherData1 = new com.patterns.java.www.observer.javaimpl.WeatherData();
+        com.patterns.java.www.observer.javaimpl.CurrentConditionsDisplay currentConditionsDisplay1 = new com.patterns.java.www.observer.javaimpl.CurrentConditionsDisplay(weatherData1);
+        weatherData1.setMeasurements(90,70,50.4f);
+
     }
 }
