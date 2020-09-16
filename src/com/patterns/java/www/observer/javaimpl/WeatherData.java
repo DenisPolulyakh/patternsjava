@@ -1,7 +1,5 @@
 package com.patterns.java.www.observer.javaimpl;
 
-import com.patterns.java.www.observer.intf.Observer;
-import java.util.List;
 import java.util.Observable;
 
 public class WeatherData extends Observable {
@@ -10,16 +8,15 @@ public class WeatherData extends Observable {
     private float pressure;
 
 
-
-    public void measurementsChanged(){
+    public void measurementsChanged() {
         setChanged();
         notifyObservers();
     }
 
-    public void setMeasurements(float temperature,float humidity,float pressure){
-        this.temperature=temperature;
-        this.humidity=humidity;
-        this.pressure=pressure;
+    public void setMeasurements(float temperature, float humidity, float pressure) {
+        this.temperature = temperature;
+        this.humidity = humidity;
+        this.pressure = pressure;
         measurementsChanged();
     }
 
