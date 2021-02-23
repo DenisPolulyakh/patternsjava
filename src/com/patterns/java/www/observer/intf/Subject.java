@@ -1,7 +1,7 @@
 package com.patterns.java.www.observer.intf;
 
 /**
- * Интерфейс субъекта
+ * Интерфейс издателя
  */
 public interface Subject {
     public void registerObserver(Observer o);
